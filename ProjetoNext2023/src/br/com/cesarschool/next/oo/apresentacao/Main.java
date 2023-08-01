@@ -8,14 +8,11 @@ public class Main {
 	public static void main(String[] args) {
 		
 		DAOContaCorrente cad = new DAOContaCorrente();	
-				
-		ContaCorrente[] cc = cad.buscarTodos();
 		
 		
-		for (ContaCorrente contaCorrente : cc) {
-			System.out.println(contaCorrente.toString());
+		ContaCorrente cc = cad.buscar("123392");
 		
-		}
+		System.out.println(cc);
 		
 		
 	}
