@@ -1,0 +1,7 @@
+package br.com.cesarschool.next.oo.dao;
+
+public class DAOContaCorrente {
+	private CadastroObjeto cadastroObjeto;
+	
+	
+}

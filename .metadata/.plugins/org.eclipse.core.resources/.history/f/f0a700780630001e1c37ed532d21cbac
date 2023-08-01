@@ -1,0 +1,19 @@
+package br.com.cesarschool.next.oo.entidade;
+
+import java.io.Serializable;
+
+public class ContaCorrente implements Serializable{
+	
+	private String numeros;
+	private double saldo;
+	private String nomeDoCorrentista;
+	
+	public ContaCorrente() {
+		
+	}
+	
+	
+	
+	
+	
+}

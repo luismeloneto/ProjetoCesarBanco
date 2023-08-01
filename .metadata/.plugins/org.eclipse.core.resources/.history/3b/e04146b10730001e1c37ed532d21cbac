@@ -1,0 +1,18 @@
+package br.com.cesarschool.next.oo.entidade;
+
+public class ContaPoupanca extends ContaCorrente{
+
+	private static final long serialVersionUID = 1L;
+	private double PercentualDeBonus;
+	
+	public ContaPoupanca() {
+
+	}
+	public ContaPoupanca(String numeros, double saldo, String nomeDoCorrentista) {
+		this(numeros, saldo, nomeDoCorrentista);
+		
+	}
+	
+	
+	
+}

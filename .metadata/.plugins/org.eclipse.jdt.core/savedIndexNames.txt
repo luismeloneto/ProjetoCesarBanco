@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\gabeo\OneDrive\Área de Trabalho\ProjetoNext2023\.metadata\.plugins\org.eclipse.jdt.core
+3448153324.index
+1865797976.index
+2450948911.index
+3413725848.index

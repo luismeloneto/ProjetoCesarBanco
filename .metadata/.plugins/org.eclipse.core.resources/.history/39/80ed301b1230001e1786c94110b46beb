@@ -1,0 +1,23 @@
+package br.com.cesarschool.next.oo.apresentacao;
+
+import br.com.cesarschool.next.oo.dao.DAOContaCorrente;
+import br.com.cesarschool.next.oo.entidade.ContaCorrente;
+import br.com.cesarschool.next.oo.entidade.ContaPoupanca;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		DAOContaCorrente cad = new DAOContaCorrente();
+		
+		
+		cad.incluir(new ContaCorrente("3212", 0, "Gabriel"));
+		
+		
+		System.out.println(cad.buscarTodos());
+		
+		
+		
+		
+	}
+
+}

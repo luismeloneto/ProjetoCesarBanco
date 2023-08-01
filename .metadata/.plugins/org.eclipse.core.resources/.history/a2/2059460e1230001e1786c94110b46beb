@@ -1,0 +1,40 @@
+package br.com.cesarschool.next.oo.dao;
+
+import java.io.Serializable;
+
+import br.com.cesarschool.next.oo.entidade.ContaCorrente;
+import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
+
+public class DAOContaCorrente{
+	private CadastroObjetos cadastro = new CadastroObjetos();
+	
+	public boolean incluir(ContaCorrente conta) {
+		ContaCorrente ccBusca = buscar(conta.getNumeros()); 
+		
+		if (ccBusca == null) {
+			return false;
+		} else {
+			cadastro.incluir(conta, conta.getNumeros());
+			return true;
+		}
+
+	}
+	
+	public boolean alterar(ContaCorrente conta) {
+		return false;
+	}
+	
+	public ContaCorrente buscar(String numero) {
+		ContaCorrente cc = new ContaCorrente();
+		return cc;
+	}
+	
+	public ContaCorrente[] buscarTodos(){
+		Serializable[] rets = cadastro.buscarTodos(ContaCorrente.class);
+		ContaCorrente[] contas = new ContaCorrente[rets.length];
+		for (int i = 0; i<contas.length; i++) {
+			contas[i] = (ContaCorrente)rets[i];
+		}
+		return contas.;
+	}
+}

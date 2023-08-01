@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.entidade.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.entidade.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.dao.DAOContaCorrente"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+</qualifiedTypeNameHistroy>

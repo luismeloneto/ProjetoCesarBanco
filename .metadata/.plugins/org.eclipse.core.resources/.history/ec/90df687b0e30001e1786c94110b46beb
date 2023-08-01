@@ -1,0 +1,15 @@
+package br.com.cesarschool.next.oo.dao;
+
+import br.com.cesarschool.next.oo.entidade.ContaCorrente;
+import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
+
+public class DAOContaCorrente{
+	private CadastroObjetos cadastro;
+	
+	public boolean incluir(ContaCorrente conta) {
+		return false;
+	}
+	
+	
+	
+}
