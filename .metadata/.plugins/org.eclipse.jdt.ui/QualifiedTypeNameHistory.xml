@@ -4,7 +4,8 @@
     <fullyQualifiedTypeName name="br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.entidade.ContaCorrente"/>
     <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.dao.DAOContaCorrente"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.entidade.ContaCorrente"/>
 </qualifiedTypeNameHistroy>

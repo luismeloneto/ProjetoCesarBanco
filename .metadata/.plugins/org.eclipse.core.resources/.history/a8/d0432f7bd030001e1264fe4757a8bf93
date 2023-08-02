@@ -1,0 +1,18 @@
+package br.com.cesarschool.next.oo.apresentacao;
+
+import br.com.cesarschool.next.oo.dao.DAOContaCorrente;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		DAOContaCorrente cad = new DAOContaCorrente();	
+		
+		
+		cad.incluir("123123", 50, "Gabriel");
+		
+		
+		
+	}
+
+}

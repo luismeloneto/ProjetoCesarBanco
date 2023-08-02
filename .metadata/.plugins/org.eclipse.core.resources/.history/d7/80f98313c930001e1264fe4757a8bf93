@@ -1,0 +1,19 @@
+package br.com.cesarschool.next.oo.apresentacao;
+
+import br.com.cesarschool.next.oo.entidade.ContaPoupanca;
+import br.com.cesarschool.next.oo.negocio.MediatorContaCorrente;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		MediatorContaCorrente cad = new MediatorContaCorrente();	
+		
+		
+		cad.incluir(new ContaPoupanca("12456", 33, "Oliveirão", 44.3));
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package br.com.cesarschool.next.oo.negocio;
+
+import java.util.Comparator;
+
+public class ComparadorContaCorrenteSaldo implements Comparator<>{
+	
+	public int compare() {
+		return 1;
+	}
+
+}
