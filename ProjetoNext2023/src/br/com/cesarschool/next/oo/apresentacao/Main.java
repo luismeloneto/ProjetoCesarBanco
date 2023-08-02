@@ -1,5 +1,7 @@
 package br.com.cesarschool.next.oo.apresentacao;
 
+import java.util.List;
+
 import br.com.cesarschool.next.oo.entidade.ContaCorrente;
 import br.com.cesarschool.next.oo.entidade.ContaPoupanca;
 import br.com.cesarschool.next.oo.negocio.MediatorContaCorrente;
@@ -10,11 +12,22 @@ public class Main {
 		
 		MediatorContaCorrente cad = new MediatorContaCorrente();	
 
-		System.out.println(cad.incluir(new ContaCorrente("321321", 50, "Gabriel")));
 		
-		System.out.println(cad.incluir(new ContaPoupanca("312312", 1500, "Oliveira", 50)));
 		
+		List<ContaCorrente> cc = cad.gerarRelatorioGeral();
+		
+		for (ContaCorrente contaCorrente : cc) {
+			
+			System.out.println("Nome: " + contaCorrente.getNomeDoCorrentista() + "\nSaldo: " + contaCorrente.getSaldo() + "\n");
+			
+		}
+		
+				
+
+			
+			
+			
+		}
 		
 	}
 
-}

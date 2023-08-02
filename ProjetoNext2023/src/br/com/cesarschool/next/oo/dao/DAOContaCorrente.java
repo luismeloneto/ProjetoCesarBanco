@@ -3,6 +3,7 @@ package br.com.cesarschool.next.oo.dao;
 import java.io.Serializable;
 
 import br.com.cesarschool.next.oo.entidade.ContaCorrente;
+import br.com.cesarschool.next.oo.entidade.ContaPoupanca;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 
 public class DAOContaCorrente{
