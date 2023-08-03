@@ -1,9 +1,0 @@
-package br.com.cesarschool.next.oo.dao;
-
-import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
-
-public class DAOContaCorrente{
-	private CadastroObjetos cadastroObjetos;
-	
-	
-}

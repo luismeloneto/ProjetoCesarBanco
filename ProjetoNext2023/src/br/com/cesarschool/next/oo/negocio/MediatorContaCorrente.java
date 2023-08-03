@@ -88,11 +88,7 @@ public class MediatorContaCorrente {
 			return null;
 		} else {
 			ContaCorrente cc = dao.buscar(numero);
-			if (cc.getClass().getSimpleName().equals("ContaCorrente")) {
-				return cc;
-			} else {
-				return null;
-			}
+			return cc;
 		}
 	}
 	

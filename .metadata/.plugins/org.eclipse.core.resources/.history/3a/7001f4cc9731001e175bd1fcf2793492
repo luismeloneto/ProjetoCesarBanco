@@ -1,0 +1,111 @@
+package br.com.cesarschool.next.oo.apresentacao;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+import br.com.cesarschool.next.oo.entidade.ContaCorrente;
+import br.com.cesarschool.next.oo.negocio.MediatorContaCorrente;
+
+public class TelaContaCorrente {
+	private MediatorContaCorrente mediator = new MediatorContaCorrente();
+	public static final Scanner sc = new Scanner(System.in);
+	
+	public TelaContaCorrente() {
+		
+	}
+	
+	public void telaInicial() {
+		int opcao = 0;
+		do {
+
+			System.out.println("1- Incluir nova conta corrente");
+			System.out.println("2- Creditar um valor na conta");
+			System.out.println("3- Alterar número de conta");
+			System.out.println("4- Consultar conta");
+			System.out.println("5- Gerar relatório geral de contas bancárias");
+			System.out.println("6- Sair");
+			System.out.print("Escolha uma opção: ");
+			try {
+				opcao = sc.nextInt();
+				switch (opcao) {
+				case 1:
+					incluir();
+					break;
+				case 2:
+					creditar();
+					break;
+				case 3:
+					debitar();
+					break;
+				case 4:
+					buscar();
+					break;
+				case 5:
+					gerarRelatorioGeral();
+					break;
+				case 6:
+					System.out.println("Finalizando...");
+					break;
+				default:
+					System.out.println("Opção inválida");
+
+				}
+
+			} catch(Exception e) {
+				sc.next();
+				System.out.println("Erro de digitação!");
+			}
+		} while(opcao != 6);
+	}
+	
+	public void incluir() {
+		int tipoConta = 0;
+		System.out.println("1 - Nova conta corrente");
+		System.out.println("2 - Nova conta poupança");
+		System.out.print("Escolha uma opção: ");
+	
+		tipoConta = sc.nextInt();
+		switch(tipoConta) {
+		case 1:
+			System.out.print("Número de conta: ");
+			String numConta = sc.next();
+			System.out.print("Saldo inicial: ");
+			double saldo = sc.nextDouble();
+			System.out.println("Nome do correntista: ");
+			String nomeCorrentista = sc.next();
+			String inclusao = mediator.incluir(new ContaCorrente(numConta, saldo, nomeCorrentista));
+			if (inclusao.equals(null)) {
+				System.out.println("Sucesso na inclusão");
+				break;
+			} else {
+				System.out.println(inclusao);
+				break;
+			}
+			
+		case 2:
+			System.out.println(tipoConta);
+			break;
+		default:
+			System.out.println("Opção inválida");
+		}
+		}
+	
+	
+	public void creditar() {
+		
+	}
+	
+	public void debitar() {
+		
+	}
+	
+	public ContaCorrente buscar() {
+		return new ContaCorrente();
+	}
+	
+	public List<ContaCorrente> gerarRelatorioGeral(){
+		List<ContaCorrente> listaDeContas = Arrays.asList();
+		return listaDeContas;
+	}
+}

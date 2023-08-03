@@ -9,6 +9,10 @@ import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 public class DAOContaCorrente{
 	private CadastroObjetos cadastro = new CadastroObjetos(ContaCorrente.class);
 	
+	public DAOContaCorrente() {
+		
+	}
+	
 	public boolean incluir(ContaCorrente conta) {
 		ContaCorrente ccBusca = buscar(conta.getNumeros()); 
 		if (ccBusca != null) {
@@ -45,22 +49,22 @@ public class DAOContaCorrente{
 	
 	public ContaCorrente[] buscarTodos(){
 		
-		Serializable[] rets = cadastro.buscarTodos(ContaCorrente.class);
+		Serializable[] cads = cadastro.buscarTodos(ContaCorrente.class);
 		/*
-		 * RETS = LISTA QUE ARMAZENA TUDO QUE FOR SERIALIZABLE, SENDO PASSADO DO TIPO ContaCorrente
+		 * cads = LISTA QUE ARMAZENA TUDO QUE FOR SERIALIZABLE, SENDO PASSADO DO TIPO ContaCorrente
 		 * CADASTRO (DA PERSISTENCIA CadastroObjetos) .BUSCARTODOS (MÉTODO DA PERSISTÊNCIA CadastroObjetos)
 		 */
 		
-		ContaCorrente[] contas = new ContaCorrente[rets.length];
+		ContaCorrente[] contas = new ContaCorrente[cads.length];
 		/*
-		 * LISTA contas ARMAZENA TUDO DO TIPO ContaCorrente (MESMO TAMANHO DA LISTA rets)
+		 * LISTA contas ARMAZENA TUDO DO TIPO ContaCorrente (MESMO TAMANHO DA LISTA cads)
 		 */
 		
 		for (int i = 0; i<contas.length; i++) {
-			contas[i] = (ContaCorrente)rets[i];
+			contas[i] = (ContaCorrente)cads[i];
 		}
 		/* 
-		 * ALIMENTANDO A LISTA contas COM OS DADOS DE CONTASCORRENTE DE rets
+		 * ALIMENTANDO A LISTA contas COM OS DADOS DE CONTASCORRENTE DE cads
 		 */
 		return contas;
 	}

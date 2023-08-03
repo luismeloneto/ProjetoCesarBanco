@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.entidade.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.cesarschool.next.oo.apresentacao.TelaContaCorrente"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
