@@ -53,11 +53,15 @@ public class MediatorContaCorrente {
 		} else if(numero == null || numero.isBlank()) {
 			return "Número de conta inválido";
 		} else {
+			
+			
 			ContaCorrente conta = dao.buscar(numero);
 			if(conta == null) {
 				return "Conta inexistente";
 			} else {
+				
 				conta.creditar(valor);
+				dao.alterar(conta);
 				return null;
 			}
 		}
@@ -77,6 +81,7 @@ public class MediatorContaCorrente {
 					return "Saldo insuficiente";
 				}else {
 					conta.debitar(valor);
+					dao.alterar(conta);
 					return null;
 				}
 			}

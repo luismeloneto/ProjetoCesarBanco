@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/gabeo/OneDrive/Área de Trabalho/ProjetoNext2023/ProjetoNext2023/lib/PersistenciaObjetos.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wally/OneDrive/Desktop/ProjetoBancoCesar/ProjetoCesarBanco/ProjetoNext2023/lib/PersistenciaObjetos.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

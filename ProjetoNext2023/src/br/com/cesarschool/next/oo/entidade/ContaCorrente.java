@@ -49,7 +49,7 @@ public class ContaCorrente extends Object implements Serializable{
 	}
 	
 	 public String toString() {
-	        return this.getNomeDoCorrentista() + "  " + this.numeros;
+	        return "Nome: " + this.getNomeDoCorrentista() + "\nNúmero da conta: " + this.numeros + "\nSaldo:" + this.getSaldo() + "\n";
 	    }
 	
 	
