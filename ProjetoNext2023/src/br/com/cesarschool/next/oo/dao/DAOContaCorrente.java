@@ -3,7 +3,6 @@ package br.com.cesarschool.next.oo.dao;
 import java.io.Serializable;
 
 import br.com.cesarschool.next.oo.entidade.ContaCorrente;
-import br.com.cesarschool.next.oo.entidade.ContaPoupanca;
 import br.edu.cesarschool.next.oo.persistenciaobjetos.CadastroObjetos;
 
 public class DAOContaCorrente{
@@ -14,21 +13,21 @@ public class DAOContaCorrente{
 	}
 	
 	public boolean incluir(ContaCorrente conta) {
-		ContaCorrente ccBusca = buscar(conta.getNumeros()); 
+		ContaCorrente ccBusca = buscar(conta.obterChaves()); 
 		if (ccBusca != null) {
 			return false;
 		} else {
-			cadastro.incluir(conta, conta.getNumeros());
+			cadastro.incluir(conta, conta.obterChaves());
 			return true;
 		}
 	}
 	
 	public boolean alterar(ContaCorrente conta) {
-		ContaCorrente ccBusca = buscar(conta.getNumeros());
+		ContaCorrente ccBusca = buscar(conta.obterChaves());
 		if (ccBusca == null) {
 			return false;
 		}else {
-			cadastro.alterar(conta, conta.getNumeros());
+			cadastro.alterar(conta, conta.obterChaves());
 			return true;
 		}
 	}

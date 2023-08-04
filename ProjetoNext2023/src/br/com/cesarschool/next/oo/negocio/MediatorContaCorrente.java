@@ -16,11 +16,11 @@ public class MediatorContaCorrente {
 	}
 	
 	public String incluir(ContaCorrente conta) {
-		if (conta.getNumeros() == null || conta.getNumeros().isBlank()) {
+		if (conta.obterChaves() == null || conta.obterChaves().isBlank()) {
 			return "Favor, incluir números da conta";
-		} else if(conta.getNumeros().length() < 5) {
+		} else if(conta.obterChaves().length() < 5) {
 			return "Número de conta abaixo do permitido (5 caracteres)";
-		} else if(conta.getNumeros().length() > 8) {
+		} else if(conta.obterChaves().length() > 8) {
 			return "Dígitos da conta acima do limite permitido (8 caracteres)";
 		} else if(conta.getSaldo() < 0) {
 			return "Não foi possível efetuar a ação, pois o saldo está negativado";

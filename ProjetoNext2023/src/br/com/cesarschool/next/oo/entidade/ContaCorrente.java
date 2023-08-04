@@ -2,7 +2,7 @@ package br.com.cesarschool.next.oo.entidade;
 
 import java.io.Serializable;
 
-public class ContaCorrente extends Object implements Serializable{
+public class ContaCorrente extends RegistroIdentificavel implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	private String numeros;
@@ -17,10 +17,6 @@ public class ContaCorrente extends Object implements Serializable{
 		this.numeros = numeros;
 		this.saldo = saldo;
 		this.nomeDoCorrentista = nomeDoCorrentista;
-	}
-
-	public String getNumeros() {
-		return numeros;
 	}
 
 	public void setNumeros(String numeros) {
@@ -49,9 +45,11 @@ public class ContaCorrente extends Object implements Serializable{
 	}
 	
 	 public String toString() {
-	        return "Nome: " + this.getNomeDoCorrentista() + "\nNúmero da conta: " + this.numeros + "\nSaldo:" + this.getSaldo() + "\n";
+	        return "Nome: " + this.nomeDoCorrentista + "\nNúmero da conta: " + this.numeros + "\nSaldo:" + this.saldo + "\n";
 	    }
-	
-	
-	
+
+	@Override
+	public String obterChaves() {
+		return this.numeros;
+	}
 }
